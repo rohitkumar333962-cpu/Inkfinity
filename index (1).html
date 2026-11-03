@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inkfinity Tattoo Studio | Custom Tattoos in Ludhiana</title>
+<meta name="description" content="Inkfinity Tattoo Studio in Ludhiana: custom, realism, minimal, fine-line and cover-up tattoos with sterile single-use needles. Book a free consultation.">
+<meta name="theme-color" content="#14213d">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♾️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#14213d;--navy2:#1d2f55;--bone:#f4f2ee;--ink:#181a22;--red:#d1343a;--gold:#e3a72f;--line:#d9d4ca;--r:14px}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:'DM Sans',system-ui,sans-serif;background:var(--bone);color:var(--ink);line-height:1.6;-webkit-text-size-adjust:100%}
+h1,h2,h3{font-family:'Rozha One',Georgia,serif;font-weight:400;line-height:1.1}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.wrap{max-width:1100px;margin:auto;padding:0 20px}
+section{padding:72px 0}
+h2{font-size:clamp(2rem,6vw,3rem);margin-bottom:12px}
+.lead{max-width:60ch;color:#4a4d57;margin-bottom:32px}
+.btn{display:inline-block;padding:13px 24px;border-radius:99px;background:var(--red);color:#fff;font-weight:700;text-decoration:none;border:0;cursor:pointer;font:700 1rem 'DM Sans',sans-serif;transition:transform .15s,background .15s}
+.btn:hover{background:#b72a30;transform:translateY(-2px)}
+.btn.ghost{background:transparent;border:2px solid currentColor}
+.btn.ghost:hover{background:rgba(255,255,255,.12)}
+
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:rgba(20,33,61,.96);backdrop-filter:blur(8px);color:#fff}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-family:'Rozha One',serif;font-size:1.35rem;text-decoration:none}
+.logo span{color:var(--gold)}
+.links{display:flex;gap:22px;align-items:center}
+.links a{text-decoration:none;font-size:.95rem;opacity:.9}
+.links a:hover{opacity:1;color:var(--gold)}
+.burger{display:none;background:none;border:0;color:#fff;font-size:1.7rem;cursor:pointer}
+@media(max-width:780px){
+ .burger{display:block}
+ .links{position:absolute;top:60px;left:0;right:0;background:var(--navy);flex-direction:column;padding:10px 20px 22px;gap:16px;display:none}
+ .links.open{display:flex}
+}
+
+/* hero */
+.hero{background:var(--navy);color:#fff;padding:0;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;min-height:82vh;padding-top:48px;padding-bottom:48px}
+.hero h1{font-size:clamp(2.8rem,10vw,5.6rem)}
+.hero h1 em{font-style:normal;color:var(--gold);display:inline-block;animation:spin 1.4s ease-out both}
+@keyframes spin{from{transform:rotate(-200deg) scale(.3);opacity:0}to{transform:none;opacity:1}}
+.hero p{margin:20px 0 28px;max-width:46ch;color:#d5dbea;font-size:1.1rem}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero-img{aspect-ratio:4/5;border-radius:200px 200px var(--r) var(--r);overflow:hidden;border:4px solid var(--gold);box-shadow:12px 12px 0 var(--red)}
+.hero-img img{width:100%;height:100%;object-fit:cover}
+.stats{display:flex;gap:28px;margin-top:34px;flex-wrap:wrap}
+.stats b{display:block;font:400 1.9rem 'Rozha One',serif;color:var(--gold)}
+.stats small{color:#aab4cc}
+@media(max-width:780px){.hero .wrap{grid-template-columns:1fr;min-height:0}.hero-img{max-width:340px;margin:0 auto;box-shadow:8px 8px 0 var(--red)}}
+
+/* marquee */
+.marq{background:var(--gold);color:var(--navy);overflow:hidden;white-space:nowrap;font:400 1.3rem 'Rozha One',serif;padding:12px 0}
+.marq div{display:inline-block;animation:mq 28s linear infinite}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* gallery */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.chip{padding:8px 18px;border-radius:99px;border:2px solid var(--navy);background:none;font:500 .92rem 'DM Sans',sans-serif;cursor:pointer;color:var(--navy)}
+.chip[aria-pressed=true]{background:var(--navy);color:#fff}
+.grid{columns:3 260px;column-gap:14px}
+.tile{break-inside:avoid;margin-bottom:14px;border-radius:var(--r);overflow:hidden;position:relative;cursor:zoom-in;background:var(--navy2);border:0;padding:0;width:100%;display:block}
+.tile img{width:100%;transition:transform .4s}
+.tile:hover img{transform:scale(1.05)}
+.tile span{position:absolute;left:10px;bottom:10px;background:var(--bone);color:var(--ink);font-size:.8rem;font-weight:700;padding:3px 12px;border-radius:99px}
+.tile.broken{min-height:200px;display:grid;place-items:center;color:#fff;font:1.4rem 'Rozha One',serif}
+.lb{position:fixed;inset:0;background:rgba(10,14,28,.94);z-index:100;display:none;place-items:center;padding:20px}
+.lb.on{display:grid}
+.lb img{max-height:86vh;border-radius:var(--r)}
+.lb button{position:absolute;top:14px;right:18px;background:none;border:0;color:#fff;font-size:2.4rem;cursor:pointer}
+
+/* styles */
+.styles{background:#fff}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{border:2px solid var(--navy);border-radius:var(--r);padding:24px;background:var(--bone)}
+.card:nth-child(even){background:var(--navy);color:#fff}
+.card h3{font-size:1.5rem;margin-bottom:8px}
+.card:nth-child(even) h3{color:var(--gold)}
+.card p{font-size:.95rem}
+
+/* artists */
+.artists{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.artist img{aspect-ratio:1;object-fit:cover;border-radius:var(--r);width:100%;background:var(--navy2)}
+.artist h3{margin:12px 0 2px;font-size:1.4rem}
+.artist p{font-size:.92rem;color:#4a4d57}
+
+/* estimator */
+.est{background:var(--navy);color:#fff}
+.est .lead{color:#c3cbe0}
+.est-box{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+@media(max-width:780px){.est-box{grid-template-columns:1fr}}
+label{display:block;font-weight:500;margin:0 0 6px;font-size:.95rem}
+select,input,textarea{width:100%;padding:12px 14px;border-radius:10px;border:2px solid var(--line);font:1rem 'DM Sans',sans-serif;background:#fff;color:var(--ink);margin-bottom:16px}
+.price{background:var(--bone);color:var(--ink);border-radius:var(--r);padding:28px;text-align:center}
+.price b{display:block;font:400 2.4rem 'Rozha One',serif;color:var(--red);margin:6px 0}
+.price small{color:#555}
+
+/* process + faq */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;counter-reset:s}
+.step{counter-increment:s;padding-left:0}
+.step::before{content:counter(s);display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--red);color:#fff;font:1.2rem 'Rozha One',serif;margin-bottom:10px}
+.step h3{font-size:1.25rem;margin-bottom:4px}
+details{border-bottom:1px solid var(--line);padding:16px 0}
+summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::after{content:'+';font-size:1.4rem;line-height:1;color:var(--red)}
+details[open] summary::after{content:'–'}
+details p{margin-top:10px;color:#4a4d57;max-width:70ch}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+@media(max-width:780px){.two{grid-template-columns:1fr;gap:32px}}
+
+/* reviews */
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+blockquote{background:#fff;border-left:6px solid var(--gold);padding:20px;border-radius:0 var(--r) var(--r) 0}
+blockquote cite{display:block;margin-top:10px;font-style:normal;font-weight:700;font-size:.9rem}
+
+/* contact */
+.contact{background:#fff}
+.map{border:0;width:100%;height:100%;min-height:300px;border-radius:var(--r)}
+.info p{margin-bottom:10px}
+footer{background:var(--navy);color:#aab4cc;text-align:center;padding:30px 20px;font-size:.9rem}
+.wa{position:fixed;right:16px;bottom:16px;z-index:60;background:#25d366;color:#fff;border-radius:99px;padding:13px 20px;font-weight:700;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.3)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<nav>
+ <div class="wrap">
+  <a class="logo" href="#top">Ink<span>finity</span></a>
+  <button class="burger" aria-label="Menu" aria-expanded="false" id="burger">☰</button>
+  <div class="links" id="links">
+   <a href="#gallery">Gallery</a><a href="#styles">Styles</a><a href="#artists">Artists</a>
+   <a href="#estimate">Price</a><a href="#aftercare">Aftercare</a><a href="#contact">Contact</a>
+   <a class="btn" href="#book" style="padding:8px 18px">Book now</a>
+  </div>
+ </div>
+</nav>
+
+<header class="hero" id="top">
+ <div class="wrap">
+  <div>
+   <h1>Ink that lasts <em>∞</em> Ludhiana</h1>
+   <p>Custom tattoos drawn for your story. Sterile single-use needles, calm studio, and artists who sketch with you before they ink you.</p>
+   <div class="cta">
+    <a class="btn" href="#book">Book free consultation</a>
+    <a class="btn ghost" href="#gallery">See our work</a>
+   </div>
+   <div class="stats">
+    <div><b>100%</b><small>Single-use needles</small></div>
+    <div><b>Free</b><small>Design consultation</small></div>
+    <div><b>Touch-up</b><small>Included in 30 days</small></div>
+   </div>
+  </div>
+  <div class="hero-img"><img data-photo="0" alt="Tattoo artist at work" width="600" height="750"></div>
+ </div>
+</header>
+
+<div class="marq" aria-hidden="true"><div>Fine line ✦ Realism ✦ Minimal ✦ Traditional ✦ Mandala ✦ Lettering ✦ Cover-ups ✦ Fine line ✦ Realism ✦ Minimal ✦ Traditional ✦ Mandala ✦ Lettering ✦ Cover-ups ✦ </div></div>
+
+<section id="gallery">
+ <div class="wrap">
+  <h2>Our work</h2>
+  <p class="lead">Tap any piece to view it full screen. Every tattoo starts as a drawing made with the client.</p>
+  <div class="filters" id="filters" role="group" aria-label="Filter by style"></div>
+  <div class="grid" id="grid"></div>
+ </div>
+</section>
+
+<section class="styles" id="styles">
+ <div class="wrap">
+  <h2>What we ink</h2>
+  <p class="lead">Not sure which style fits your idea? Tell us the meaning and we'll suggest one.</p>
+  <div class="cards">
+   <div class="card"><h3>Fine line</h3><p>Delicate outlines, small symbols and botanical pieces. Great for wrists, ribs and behind the ear.</p></div>
+   <div class="card"><h3>Realism</h3><p>Portraits, eyes, animals and detailed shading. Needs a longer sitting and a clear reference photo.</p></div>
+   <div class="card"><h3>Minimal</h3><p>Tiny, clean designs: initials, dates, shapes. Quick to do and easy to place.</p></div>
+   <div class="card"><h3>Traditional</h3><p>Bold outlines and solid colour in classic flash style. Ages well and reads from far away.</p></div>
+   <div class="card"><h3>Lettering</h3><p>Names, quotes and scripts in English, Hindi and Punjabi (Gurmukhi).</p></div>
+   <div class="card"><h3>Cover-ups</h3><p>Old or faded tattoo you want gone? We redesign it into something you like.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="artists">
+ <div class="wrap">
+  <h2>Meet the artists</h2>
+  <p class="lead">Replace these sample profiles with your real team.</p>
+  <div class="artists">
+   <div class="artist"><img data-photo="1" alt="Lead tattoo artist" loading="lazy"><h3>Lead artist</h3><p>Realism and custom sleeves</p></div>
+   <div class="artist"><img data-photo="2" alt="Fine line artist" loading="lazy"><h3>Fine line artist</h3><p>Minimal and fine-line work</p></div>
+   <div class="artist"><img data-photo="3" alt="Lettering artist" loading="lazy"><h3>Lettering artist</h3><p>Lettering and traditional flash</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="est" id="estimate">
+ <div class="wrap">
+  <h2>Quick price estimate</h2>
+  <p class="lead">A rough range to help you plan. The exact quote comes after we see your design.</p>
+  <div class="est-box">
+   <div>
+    <label for="eSize">Size</label>
+    <select id="eSize"><option value="0">Tiny (up to 2 inch)</option><option value="1" selected>Small (2 to 4 inch)</option><option value="2">Medium (4 to 6 inch)</option><option value="3">Large (6 to 10 inch)</option><option value="4">Half sleeve or back piece</option></select>
+    <label for="eStyle">Style</label>
+    <select id="eStyle"><option value="1">Minimal / lettering</option><option value="1.2">Fine line</option><option value="1.4">Traditional</option><option value="1.8">Realism</option><option value="1.5">Cover-up</option></select>
+    <label for="eColor">Colour</label>
+    <select id="eColor"><option value="1">Black and grey</option><option value="1.25">Full colour</option></select>
+   </div>
+   <div class="price" aria-live="polite">
+    <small>Estimated range</small>
+    <b id="eOut">–</b>
+    <small>Final price depends on detail, placement and time. Consultation is free.</small>
+    <p style="margin-top:16px"><a class="btn" href="#book">Get exact quote</a></p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap two">
+  <div id="process">
+   <h2>How it works</h2>
+   <div class="steps" style="grid-template-columns:1fr">
+    <div class="step"><h3>Consult</h3><p>Share your idea, reference and placement. It's free.</p></div>
+    <div class="step"><h3>Design</h3><p>We sketch it, resize it on your body and fix details until you love it.</p></div>
+    <div class="step"><h3>Ink</h3><p>Fresh sterile needles, clean station, breaks whenever you need them.</p></div>
+    <div class="step"><h3>Heal</h3><p>You get written aftercare and a free touch-up check.</p></div>
+   </div>
+  </div>
+  <div id="aftercare">
+   <h2>Aftercare &amp; FAQ</h2>
+   <details><summary>Does it hurt?</summary><p>Some spots hurt more (ribs, spine, feet). Most people describe it as a steady scratching feeling. Eat well, sleep, and we'll pause whenever you ask.</p></details>
+   <details><summary>How do I look after a new tattoo?</summary><p>Keep the wrap on for the time your artist says, wash gently with mild soap, pat dry, apply a thin layer of recommended ointment. Avoid swimming, gym sweat, sun and picking scabs for about two weeks.</p></details>
+   <details><summary>Is it safe?</summary><p>Yes. We use sealed single-use needles and cartridges, disposable gloves and barriers, and disinfect every surface between clients.</p></details>
+   <details><summary>Minimum age?</summary><p>You must be 18 or older with a valid photo ID.</p></details>
+   <details><summary>Can I bring my own design?</summary><p>Yes. Our artists will adjust it so it works on skin and lasts well.</p></details>
+   <details><summary>How long does healing take?</summary><p>Surface healing takes 2 to 3 weeks. Full settling takes about 2 months.</p></details>
+  </div>
+ </div>
+</section>
+
+<section style="background:var(--bone);padding-top:0">
+ <div class="wrap">
+  <h2>Client words</h2>
+  <div class="quotes">
+   <blockquote>"Showed me three sketches before we started. Zero pressure and the line work is super clean."<cite>Sample review, Model Town</cite></blockquote>
+   <blockquote>"Very hygienic, opened every needle in front of me. Healed perfectly."<cite>Sample review, Sarabha Nagar</cite></blockquote>
+   <blockquote>"My cover-up turned out better than I imagined. Thank you team."<cite>Sample review, Pakhowal Road</cite></blockquote>
+  </div>
+ </div>
+</section>
+
+<section class="contact" id="book">
+ <div class="wrap">
+  <h2>Book your session</h2>
+  <p class="lead">Fill this in and it opens WhatsApp with your message ready to send.</p>
+  <div class="two">
+   <form id="form" novalidate>
+    <label for="fName">Your name</label><input id="fName" required autocomplete="name">
+    <label for="fIdea">Tattoo idea</label><textarea id="fIdea" rows="3" placeholder="Eg. small lotus on wrist, fine line" required></textarea>
+    <label for="fPlace">Placement</label>
+    <select id="fPlace"><option>Forearm</option><option>Upper arm</option><option>Wrist</option><option>Back</option><option>Chest</option><option>Ribs</option><option>Leg</option><option>Neck / behind ear</option><option>Other</option></select>
+    <label for="fDate">Preferred date</label><input type="date" id="fDate">
+    <button class="btn" type="submit">Send on WhatsApp</button>
+    <p id="fErr" role="alert" style="color:var(--red);margin-top:10px"></p>
+   </form>
+   <div class="info" id="contact">
+    <h3 style="margin-bottom:12px">Visit us in Ludhiana</h3>
+    <p><b>Address:</b> <span id="addr"></span></p>
+    <p><b>Hours:</b> Mon to Sat, 11 am to 8 pm. Sunday by appointment.</p>
+    <p><b>Phone:</b> <a id="tel" href="#"></a></p>
+    <p><b>Instagram:</b> <a id="ig" target="_blank" rel="noopener"></a></p>
+    <div style="height:280px;margin-top:14px"><iframe class="map" title="Map of Inkfinity Tattoo Studio in Ludhiana" loading="lazy" id="map"></iframe></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<footer>© <span id="yr"></span> Inkfinity Tattoo Studio, Ludhiana. Must be 18+ with ID. Tattoos are permanent, so choose wisely.</footer>
+<a class="wa" id="waFloat" target="_blank" rel="noopener">WhatsApp</a>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Image viewer"><button aria-label="Close">×</button><img alt=""></div>
+
+<script>
+/* ===== EDIT THESE ===== */
+const CONFIG={
+ whatsapp:"919999999999",           // country code + number, no + or spaces
+ phone:"+91 99999 99999",
+ address:"Model Town, Ludhiana, Punjab",   // put your real address
+ instagram:"inkfinity.ludhiana",
+ prices:{base:[1500,2500,5000,9000,25000], spread:1.5} // size base in ₹, upper range multiplier
+};
+/* Photos: Unsplash links. Swap any URL for your own (e.g. "photos/tattoo1.jpg") */
+const U=id=>`https://images.unsplash.com/${id}?auto=format&fit=crop&w=800&q=75`;
+const PHOTOS=[
+ {src:U("photo-1611501275019-9b5cda994e8d"),style:"Realism",label:"Studio"},
+ {src:U("photo-1590246814883-57c511e76b5e"),style:"Realism",label:"Artist"},
+ {src:U("photo-1568515045052-f9a854d70bfd"),style:"Fine line",label:"Artist"},
+ {src:U("photo-1598371839696-5c5bb00bdc28"),style:"Lettering",label:"Artist"},
+ {src:U("photo-1565058379802-bbe93b2f703a"),style:"Traditional",label:"Traditional"},
+ {src:U("photo-1542727365-19732a80dcfd"),style:"Realism",label:"Sleeve"},
+ {src:U("photo-1562962230-16e4623d36e6"),style:"Minimal",label:"Minimal"},
+ {src:U("photo-1604881991720-f91add269bed"),style:"Fine line",label:"Fine line"},
+ {src:U("photo-1475695605113-ca2a4d9bd2e0"),style:"Lettering",label:"Script"},
+ {src:U("photo-1567701554261-2ec4b4ffbf6e"),style:"Traditional",label:"Flash"}
+];
+/* ====================== */
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const fallback=img=>{img.onerror=null;img.style.display="none";const p=img.parentElement;p.classList.add("broken");if(!p.querySelector("i"))p.insertAdjacentHTML("afterbegin","<i style='font-style:normal;padding:40px 10px;text-align:center'>♾️ Inkfinity</i>");};
+
+// Hero + artist photos
+$$("[data-photo]").forEach(i=>{i.src=PHOTOS[i.dataset.photo].src;i.onerror=()=>fallback(i)});
+
+// Gallery
+const styles=["All",...new Set(PHOTOS.map(p=>p.style))];
+$("#filters").innerHTML=styles.map((s,i)=>`<button class="chip" aria-pressed="${i==0}" data-s="${s}">${s}</button>`).join("");
+function render(f){
+ $("#grid").innerHTML=PHOTOS.filter(p=>f=="All"||p.style==f).map(p=>`<button class="tile" data-src="${p.src}" aria-label="View ${p.style} tattoo"><img src="${p.src}" alt="${p.style} tattoo" loading="lazy"><span>${p.style}</span></button>`).join("");
+ $$("#grid img").forEach(i=>i.onerror=()=>fallback(i));
+}
+render("All");
+$("#filters").onclick=e=>{const b=e.target.closest(".chip");if(!b)return;$$(".chip").forEach(c=>c.setAttribute("aria-pressed",c==b));render(b.dataset.s)};
+
+// Lightbox
+const lb=$("#lb");
+$("#grid").onclick=e=>{const t=e.target.closest(".tile");if(!t||t.classList.contains("broken"))return;lb.querySelector("img").src=t.dataset.src.replace("w=800","w=1400");lb.classList.add("on");lb.querySelector("button").focus()};
+lb.onclick=()=>lb.classList.remove("on");
+addEventListener("keydown",e=>{if(e.key=="Escape")lb.classList.remove("on")});
+
+// Nav
+$("#burger").onclick=()=>{const o=$("#links").classList.toggle("open");$("#burger").setAttribute("aria-expanded",o)};
+$$("#links a").forEach(a=>a.onclick=()=>$("#links").classList.remove("open"));
+
+// Estimator
+const fmt=n=>"₹"+Math.round(n/100)*100;
+function est(){
+ const base=CONFIG.prices.base[+$("#eSize").value]*$("#eStyle").value*$("#eColor").value;
+ $("#eOut").textContent=fmt(base)+" – "+fmt(base*CONFIG.prices.spread).replace("₹","₹");
+}
+["#eSize","#eStyle","#eColor"].forEach(s=>$(s).onchange=est);est();
+
+// Contact details
+$("#addr").textContent=CONFIG.address;
+$("#tel").textContent=CONFIG.phone;$("#tel").href="tel:"+CONFIG.phone.replace(/\s/g,"");
+$("#ig").textContent="@"+CONFIG.instagram;$("#ig").href="https://instagram.com/"+CONFIG.instagram;
+$("#map").src="https://maps.google.com/maps?q="+encodeURIComponent("Inkfinity Tattoo Studio "+CONFIG.address)+"&output=embed";
+$("#waFloat").href="https://wa.me/"+CONFIG.whatsapp+"?text="+encodeURIComponent("Hi Inkfinity! I'd like to know more about getting a tattoo.");
+$("#yr").textContent=new Date().getFullYear();
+$("#fDate").min=new Date().toISOString().split("T")[0];
+
+// Booking -> WhatsApp
+$("#form").onsubmit=e=>{
+ e.preventDefault();
+ const n=$("#fName").value.trim(),i=$("#fIdea").value.trim();
+ if(!n||!i){$("#fErr").textContent="Please add your name and tattoo idea.";return}
+ $("#fErr").textContent="";
+ const msg=`Hi Inkfinity! I'm ${n}.\nIdea: ${i}\nPlacement: ${$("#fPlace").value}\nPreferred date: ${$("#fDate").value||"flexible"}\nEstimate I saw: ${$("#eOut").textContent}`;
+ window.open("https://wa.me/"+CONFIG.whatsapp+"?text="+encodeURIComponent(msg),"_blank");
+};
+</script>
+</body>
+</html>
